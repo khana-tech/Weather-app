@@ -1,46 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wdth@75&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wdth@75&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <title>Weather App</title>
-    
-</head>
-<body>
+  </head>
+  <body>
     <div class="weather-app">
-    <header>
+      <header>
         <form action="#" class="search-form" id="search-form">
-            <input type="search" placeholder="Enter a city..." required class="search-form-input" id="search-form-input">
-            <input type="submit" value="search" class="search-form-button">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-form-input"
+            id="search-form-input"
+          />
+          <input type="submit" value="search" class="search-form-button" />
         </form>
-    </header>
-    <main>
+      </header>
+      <main>
         <div class="weather-app-data">
-        <div>
-        <h1 class="city-details" id="city-details">
-            
-        </h1>
-        <p class="data-details">
-          <span id="time"></span> , <span id="description"></span>
-            <br>
-            Humidity: <strong id="humidity"></strong>, Wind: <strong id="wind-speed"></strong> 
-        </p>
+          <div>
+            <h1 class="city-details" id="city-details"></h1>
+            <p class="data-details">
+              <span id="time"></span> , <span id="description"></span>
+              <br />
+              Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind-speed"></strong>
+            </p>
+          </div>
+          <div class="current-temperature">
+            <div id="icon"></div>
+            <div class="app-temp-val" id="temperatue"></div>
+            <div class="app-temp-unit">°C</div>
+          </div>
         </div>
-        <div class="current-temperature">
-           <div class="app-temp-icon"> 🌦</div>
-            <div class="app-temp-val" id="temperatue"></div> 
-            <div class="app-temp-unit">°C</div> 
-        </div>
-        </div>
-    </main>
-    <footer>
-        This projected was coded by <a href="https://github.com/khana-tech">Nyakan Peter</a>,is <a href="https://github.com/khana-tech/Weather-app">open source on Github</a> and <a href="https://weather-codes-application.netlify.app/">hosted on Netify</a>
-    </footer>
+      </main>
+      <footer>
+        This projected was coded by
+        <a href="https://github.com/khana-tech">Nyakan Peter</a>,is
+        <a href="https://github.com/khana-tech/Weather-app"
+          >open source on Github</a
+        >
+        and
+        <a href="https://weather-codes-application.netlify.app/"
+          >hosted on Netify</a
+        >
+      </footer>
     </div>
     <script src="src/index.js"></script>
+  </body>
 </html>
